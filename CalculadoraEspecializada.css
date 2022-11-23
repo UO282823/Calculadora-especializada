@@ -1,0 +1,40 @@
+/* Especificidad: 001*/
+body{
+    font-family: "Monaco", sans-serif;
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+/* Especificidad: 001*/
+form{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 1.8em;
+    background-color: grey;
+    width: fit-content; 
+    height: auto;
+}
+/* Especificidad: 011*/
+input[name="pantalla"],textarea[name="pila"]{
+    background-color: white;
+    grid-column: span 4;
+    margin-bottom: 1em;
+    padding: 1em;
+    resize: none;
+}
+/* Especificidad: 011*/
+input[value="ENTER"]{
+    grid-column: span 2;
+}
+/* Especificidad: 011*/
+input[type=button]  {
+    border-radius: 5%;
+    
+    padding: 1em;
+    margin: 0.3em;
+    font-size: 0.8em;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Calculadora Especializada</title>
+        <meta name="author" content="Hugo Pulido Pensado" />
+        <meta name="description" content="Calculadora Especializada" />
+        <meta name ="keywords" content ="Calculadora, RPN, Calculadora notacio polaca, notacion polaca, matematicas" />
+        <meta name ="viewport" content ="width=device-width, initial scale=1.0" />
+        <script src="CalculadoraEspecializada.js"></script>
+        <link rel="stylesheet" type="text/css" href="CalculadoraEspecializada.css" />
+    </head>
+    <body>
+        <h1>Calculadora Especializada</h1>
+        <form>
+
+            <label for="pila">Pila</label>
+            <textarea name="pila" id="pila"  rows="5" disabled></textarea>
+            
+            <label for="pantalla">Pantalla</label>
+            <input type="text" name="pantalla" id="pantalla" value="" lang="es" disabled>
+
+            <input type="button" value="sin" onclick="calculadoraEspecializada.sin()" >
+            <input type="button" value="cos" onclick="calculadoraEspecializada.cos()" >
+            <input type="button" value="tan" onclick="calculadoraEspecializada.tan()" >
+            <input type="button" value="C Pila" onclick="calculadoraEspecializada.borrarPila()" >
+
+            <input type="button" value="asin" onclick="calculadoraEspecializada.asin()" >
+            <input type="button" value="acos" onclick="calculadoraEspecializada.acos()" >
+            <input type="button" value="atan" onclick="calculadoraEspecializada.atan()" >
+            <input type="button" value="C Pant" onclick="calculadoraEspecializada.borrarPantalla()" >
+
+            <input type="button" value="7" onclick="calculadoraEspecializada.digitos(7)" >
+            <input type="button" value="8" onclick="calculadoraEspecializada.digitos(8)" >
+            <input type="button" value="9" onclick="calculadoraEspecializada.digitos(9)" >
+            <input type="button" value="/" onclick="calculadoraEspecializada.division()" >
+
+            <input type="button" value="4" onclick="calculadoraEspecializada.digitos(4)" >
+            <input type="button" value="5" onclick="calculadoraEspecializada.digitos(5)" >
+            <input type="button" value="6" onclick="calculadoraEspecializada.digitos(6)" >
+            <input type="button" value="*" onclick="calculadoraEspecializada.producto()" >
+            
+
+            <input type="button" value="1" onclick="calculadoraEspecializada.digitos(1)" >
+            <input type="button" value="2" onclick="calculadoraEspecializada.digitos(2)" >
+            <input type="button" value="3" onclick="calculadoraEspecializada.digitos(3)" >
+            <input type="button" value="-" onclick="calculadoraEspecializada.menos()" >
+
+            <input type="button" value="0" onclick="calculadoraEspecializada.digitos(0)" >
+            <input type="button" value="." onclick="calculadoraEspecializada.punto()" >
+            <input type="button" value="+-" onclick="calculadoraEspecializada.masMenos()" >
+            <input type="button" value="+" onclick="calculadoraEspecializada.mas()" >
+
+
+
+            <input type="button" value="ENTER" onclick="calculadoraEspecializada.enter()" >
+            <input type="button" value="← Pila" onclick="calculadoraEspecializada.borrarUltimoPila()" >
+            <input type="button" value="← Pant" onclick="calculadoraEspecializada.borrarDigito()" >
+            <input type="button" value="x" onclick="calculadoraEspecializada.x()" >
+            <input type="button" value="sim" onclick="calculadoraEspecializada.modoSim()" >
+            <input type="button" value="Pot" onclick="calculadoraEspecializada.potencia()" >
+            <input type="button" value="Der" onclick="calculadoraEspecializada.derivada()" >
+            
+            
+            
+            
+
+        
+        </form>
+
+    </body>
+</html>
